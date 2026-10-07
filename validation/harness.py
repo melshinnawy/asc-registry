@@ -1,4 +1,3 @@
-import json
 import yaml
 from pathlib import Path
 
@@ -33,4 +32,12 @@ for control_file in control_files:
         with open(control_file, "r", encoding="utf-8") as f:
             control = yaml.safe_load(f)
 
-        print
+        print(
+            f"✅ Loaded {control['id']} - {control['title']}"
+        )
+
+    except Exception as e:
+        print(f"❌ Error loading {control_file.name}")
+        print(e)
+
+print("✅ Validation completed successfully")
