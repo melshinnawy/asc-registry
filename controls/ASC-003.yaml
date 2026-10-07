@@ -1,0 +1,48 @@
+id: ASC-003
+
+title: Model Access Control
+
+status: active
+
+created: "2026-10-07"
+updated: "2026-10-07"
+
+risk:
+  - Unauthorized Access
+  - Credential Abuse
+
+description: >
+  Access to AI models, endpoints, and services shall
+  require authentication, authorization, and auditing.
+
+implementation:
+  - Enforce authentication
+  - Implement role-based access control
+  - Protect API keys
+  - Enable audit logging
+
+validation:
+  - Verify unauthorized users cannot access models
+  - Test role restrictions
+  - Validate audit logs
+
+monitoring:
+  - Failed authentication attempts
+  - Privilege escalation events
+  - API access anomalies
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0028
+
+  owasp_llm:
+    - LLM02
+
+  nist_ai_rmf:
+    - Govern
+
+references:
+  - NIST AI RMF
+  - MITRE ATLAS
+
+version: "0.1.0"
