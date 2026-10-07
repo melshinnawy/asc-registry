@@ -1,93 +1,49 @@
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "AI Security Control",
-  "description": "ASC Registry Control Definition",
-  "type": "object",
+id: ASC-001
 
-  "required": [
-    "id",
-    "title",
-    "status",
-    "risk",
-    "description",
-    "implementation",
-    "validation",
-    "monitoring",
-    "version"
-  ],
+title: Prompt Injection Protection
 
-  "properties": {
+status: active
 
-    "id": {
-      "type": "string",
-      "pattern": "^ASC-[0-9]{3}$",
-      "description": "Unique ASC Control Identifier"
-    },
+created: "2026-10-07"
+updated: "2026-10-07"
 
-    "title": {
-      "type": "string",
-      "minLength": 5
-    },
+risk:
+  - Prompt Injection
+  - Instruction Override
 
-    "status": {
-      "type": "string",
-      "enum": [
-        "draft",
-        "active",
-        "deprecated"
-      ]
-    },
+description: >
+  AI applications shall implement controls that
+  prevent prompt injection attacks from bypassing,
+  modifying, or overriding trusted instructions.
 
-    "risk": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string"
-      }
-    },
+implementation:
+  - Separate system prompts from user content
+  - Validate user inputs
+  - Apply prompt filtering
+  - Monitor prompt anomalies
 
-    "description": {
-      "type": "string",
-      "minLength": 20
-    },
+validation:
+  - Execute known prompt injection tests
+  - Verify system instructions remain enforced
+  - Confirm restricted functions cannot be triggered
 
-    "implementation": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string"
-      }
-    },
+monitoring:
+  - Prompt policy violations
+  - Injection detection alerts
+  - Failed validation events
 
-    "validation": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string"
-      }
-    },
+framework_mappings:
+  mitre_atlas:
+    - AML.T0051
 
-    "monitoring": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string"
-      }
-    },
+  owasp_llm:
+    - LLM01
 
-    "references": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
+  nist_ai_rmf:
+    - Govern
 
-    "version": {
-      "type": "string",
-      "pattern": "^[0-9]+\\.[0-9]+$"
-    }
-  },
+references:
+  - OWASP Top 10 for LLM Applications
+  - MITRE ATLAS
 
-  "additionalProperties": false
-}
-`
+version: "0.1.0"
