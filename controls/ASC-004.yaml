@@ -1,0 +1,48 @@
+id: ASC-004
+
+title: Agent Permission Boundaries
+
+status: active
+
+created: "2026-10-07"
+updated: "2026-10-07"
+
+risk:
+  - Agent Abuse
+  - Unauthorized Actions
+
+description: >
+  AI agents shall operate with the minimum permissions
+  required to perform assigned tasks.
+
+implementation:
+  - Apply least privilege
+  - Restrict tool access
+  - Define execution boundaries
+  - Require approval for sensitive actions
+
+validation:
+  - Attempt restricted actions
+  - Verify permission enforcement
+  - Test escalation scenarios
+
+monitoring:
+  - Tool execution events
+  - Permission violations
+  - Sensitive action requests
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0043
+
+  owasp_llm:
+    - LLM08
+
+  nist_ai_rmf:
+    - Manage
+
+references:
+  - OWASP Top 10 for LLM Applications
+  - MITRE ATLAS
+
+version: "0.1.0"
