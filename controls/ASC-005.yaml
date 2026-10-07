@@ -1,0 +1,49 @@
+id: ASC-005
+
+title: Output Validation and Guardrails
+
+status: active
+
+created: "2026-10-07"
+updated: "2026-10-07"
+
+risk:
+  - Unsafe Outputs
+  - Policy Violations
+
+description: >
+  AI-generated outputs shall be validated against
+  organizational policies and security requirements
+  before use in critical workflows.
+
+implementation:
+  - Apply content filtering
+  - Define policy guardrails
+  - Validate generated outputs
+  - Implement output review mechanisms
+
+validation:
+  - Test policy violations
+  - Verify guardrail enforcement
+  - Execute adversarial prompt testing
+
+monitoring:
+  - Blocked outputs
+  - Guardrail violations
+  - Unsafe content detections
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0051
+
+  owasp_llm:
+    - LLM01
+
+  nist_ai_rmf:
+    - Measure
+
+references:
+  - OWASP Top 10 for LLM Applications
+  - NIST AI RMF
+
+version: "0.1.0"
