@@ -4,6 +4,9 @@ title: Prompt Injection Protection
 
 status: active
 
+created: "2026-10-07"
+updated: "2026-10-07"
+
 risk:
   - Prompt Injection
   - Instruction Override
@@ -29,8 +32,18 @@ monitoring:
   - Failed validation events
   - Injection detection alerts
 
+framework_mappings:
+  mitre_atlas:
+    - AML.T0051
+
+  owasp_llm:
+    - LLM01
+
+  nist_ai_rmf:
+    - Govern
+
 references:
-  - OWASP LLM Top 10
+  - OWASP Top 10 for LLM Applications
   - MITRE ATLAS
 
-version: 0.1
+version: "0.1.0"
