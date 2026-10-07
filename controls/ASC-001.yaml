@@ -1,0 +1,14 @@
+id: ASC-001
+
+title: Prompt Injection Protection
+
+risk:
+  - Prompt Injection
+
+implementation:
+  - Validate user inputs
+  - Separate instructions from data
+
+validation:
+  - Test malicious prompts
+  - Verify instruction boundaries
