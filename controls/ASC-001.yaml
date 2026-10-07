@@ -2,13 +2,35 @@ id: ASC-001
 
 title: Prompt Injection Protection
 
+status: active
+
 risk:
   - Prompt Injection
+  - Instruction Override
+
+description: >
+  AI applications shall implement controls that
+  prevent untrusted user inputs from overriding,
+  modifying, or bypassing system instructions.
 
 implementation:
-  - Validate user inputs
-  - Separate instructions from data
+  - Separate system prompts from user inputs
+  - Validate input content
+  - Apply prompt filtering
+  - Monitor prompt anomalies
 
 validation:
-  - Test malicious prompts
-  - Verify instruction boundaries
+  - Submit known prompt injection samples
+  - Verify system instructions remain intact
+  - Confirm restricted functions cannot be triggered
+
+monitoring:
+  - Prompt policy violations
+  - Failed validation events
+  - Injection detection alerts
+
+references:
+  - OWASP LLM Top 10
+  - MITRE ATLAS
+
+version: 0.1
