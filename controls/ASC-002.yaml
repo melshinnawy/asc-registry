@@ -1,0 +1,50 @@
+id: ASC-002
+
+title: Retrieval Data Isolation
+
+status: active
+
+created: "2026-10-07"
+updated: "2026-10-07"
+
+risk:
+  - Data Leakage
+  - Unauthorized Retrieval
+
+description: >
+  AI systems using Retrieval Augmented Generation (RAG)
+  shall isolate retrieval sources and enforce access
+  boundaries to prevent unauthorized data exposure.
+
+implementation:
+  - Apply access controls to knowledge sources
+  - Enforce tenant isolation
+  - Restrict retrieval scope
+  - Validate retrieval permissions
+
+validation:
+  - Attempt unauthorized retrieval requests
+  - Verify access boundaries are enforced
+  - Confirm tenant separation
+
+monitoring:
+  - Retrieval access violations
+  - Unauthorized query attempts
+  - Knowledge source access logs
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0015
+
+  owasp_llm:
+    - LLM06
+
+  nist_ai_rmf:
+    - Manage
+
+references:
+  - OWASP Top 10 for LLM Applications
+  - MITRE ATLAS
+
+version: "0.1.0"
+`
