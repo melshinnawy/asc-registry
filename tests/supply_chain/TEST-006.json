@@ -1,0 +1,7 @@
+{
+  "id": "TEST-006",
+  "control": "ASC-006",
+  "name": "Model Provenance Verification",
+  "risk": "Supply Chain Attack",
+  "expected": "verified"
+}
