@@ -1,0 +1,7 @@
+{
+  "id": "TEST-007",
+  "control": "ASC-007",
+  "name": "Training Data Poisoning Detection",
+  "risk": "Data Poisoning",
+  "expected": "detected"
+}
