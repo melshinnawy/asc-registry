@@ -5,7 +5,7 @@ title: Model Access Control
 status: active
 
 created: "2026-10-07"
-updated: "2026-10-07"
+updated: "2026-10-11"
 
 risk:
   - Unauthorized Access
@@ -39,10 +39,11 @@ framework_mappings:
     - LLM02
 
   nist_ai_rmf:
-    - Govern
+    - GOVERN.3
 
 references:
   - NIST AI RMF
   - MITRE ATLAS
+  - OWASP Top 10 for LLM Applications
 
 version: "0.1.0"
