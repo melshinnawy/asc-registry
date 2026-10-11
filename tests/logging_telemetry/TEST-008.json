@@ -1,0 +1,7 @@
+{
+  "id": "TEST-008",
+  "control": "ASC-008",
+  "name": "Telemetry Generation Verification",
+  "risk": "Undetected Security Events",
+  "expected": "logged"
+}
