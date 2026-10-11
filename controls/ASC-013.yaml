@@ -1,0 +1,49 @@
+id: ASC-013
+
+title: Sensitive Data Protection
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Sensitive Data Exposure
+  - Confidential Information Disclosure
+
+description: >
+  AI systems shall identify, protect,
+  and prevent exposure of sensitive
+  and regulated information.
+
+implementation:
+  - Detect sensitive information
+  - Apply data classification
+  - Enforce masking and redaction
+  - Restrict sensitive data access
+
+validation:
+  - Test data loss prevention controls
+  - Verify redaction capabilities
+  - Confirm access restrictions
+
+monitoring:
+  - Sensitive data exposure events
+  - Access violations
+  - Policy violations
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0015
+
+  owasp_llm:
+    - LLM06
+
+  nist_ai_rmf:
+    - GOVERN.4
+
+references:
+  - NIST AI RMF
+  - OWASP Top 10 for LLM Applications
+
+version: "0.1.0"
