@@ -1,7 +1,31 @@
 {
   "id": "TEST-006",
   "control": "ASC-006",
-  "name": "Model Provenance Verification",
-  "risk": "Supply Chain Attack",
-  "expected": "verified"
+  "title": "Model Provenance Verification",
+
+  "objective": "Verify deployed models originate from trusted sources",
+
+  "preconditions": [
+    "Model file available",
+    "Signature metadata available"
+  ],
+
+  "test_steps": [
+    "Load model metadata",
+    "Verify artifact signature",
+    "Validate trusted publisher",
+    "Compare checksum against registry"
+  ],
+
+  "expected_results": [
+    "Signature is valid",
+    "Publisher is trusted",
+    "Checksum matches"
+  ],
+
+  "pass_criteria": [
+    "All verification checks succeed"
+  ],
+
+  "severity": "High"
 }
