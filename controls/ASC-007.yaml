@@ -1,0 +1,49 @@
+id: ASC-007
+
+title: Training Data Integrity
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Data Poisoning
+  - Data Manipulation
+
+description: >
+  AI systems shall validate the integrity,
+  accuracy, and trustworthiness of training
+  and fine-tuning datasets.
+
+implementation:
+  - Validate data sources
+  - Track dataset lineage
+  - Detect anomalous records
+  - Enforce dataset review processes
+
+validation:
+  - Test poisoning detection mechanisms
+  - Verify dataset provenance
+  - Review data integrity controls
+
+monitoring:
+  - Dataset modifications
+  - Data quality alerts
+  - Data poisoning indicators
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0018
+
+  owasp_llm:
+    - LLM03
+
+  nist_ai_rmf:
+    - MEASURE.2
+
+references:
+  - MITRE ATLAS
+  - NIST AI RMF
+
+version: "0.1.0"
