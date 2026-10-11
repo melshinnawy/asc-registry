@@ -1,4 +1,4 @@
-# ASC Controls
+# ASC Control Catalog
 
 ## Foundation Controls
 
@@ -8,7 +8,7 @@
 - ASC-004 Agent Permission Boundaries
 - ASC-005 Output Validation and Guardrails
 
-## Advanced Controls
+## Security Operations Controls
 
 - ASC-006 AI Supply Chain Security
 - ASC-007 Training Data Integrity
