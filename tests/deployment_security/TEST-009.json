@@ -1,0 +1,7 @@
+{
+  "id": "TEST-009",
+  "control": "ASC-009",
+  "name": "Unauthorized Deployment Attempt",
+  "risk": "Deployment Misconfiguration",
+  "expected": "blocked"
+}
