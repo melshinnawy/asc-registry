@@ -1,0 +1,49 @@
+id: ASC-008
+
+title: AI Logging and Telemetry
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Undetected Security Events
+  - Incident Visibility Gaps
+
+description: >
+  AI systems shall generate sufficient telemetry,
+  logging, and audit records to support monitoring,
+  investigations, and security operations.
+
+implementation:
+  - Enable audit logging
+  - Centralize telemetry collection
+  - Record model interactions
+  - Protect log integrity
+
+validation:
+  - Verify audit records are produced
+  - Confirm log retention requirements
+  - Test monitoring integrations
+
+monitoring:
+  - Logging failures
+  - Alert generation
+  - Telemetry anomalies
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0027
+
+  owasp_llm:
+    - LLM08
+
+  nist_ai_rmf:
+    - MANAGE.4
+
+references:
+  - MITRE ATLAS
+  - NIST AI RMF
+
+version: "0.1.0"
