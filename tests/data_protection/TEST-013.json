@@ -1,0 +1,7 @@
+{
+  "id": "TEST-013",
+  "control": "ASC-013",
+  "name": "Sensitive Data Exposure Attempt",
+  "risk": "Sensitive Data Disclosure",
+  "expected": "blocked"
+}
