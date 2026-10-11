@@ -1,0 +1,7 @@
+{
+  "id": "TEST-010",
+  "control": "ASC-010",
+  "name": "Incident Escalation Validation",
+  "risk": "Delayed Response",
+  "expected": "escalated"
+}
