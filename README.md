@@ -156,6 +156,16 @@ ASC includes a growing security validation library linked to controls.
 | TEST-003 | ASC-003 |
 | TEST-004 | ASC-004 |
 | TEST-005 | ASC-005 |
+| TEST-006 | ASC-006 |
+| TEST-007 | ASC-007 |
+| TEST-008 | ASC-008 |
+| TEST-009 | ASC-009 |
+| TEST-010 | ASC-010 |
+| TEST-011 | ASC-011 |
+| TEST-012 | ASC-012 |
+| TEST-013 | ASC-013 |
+| TEST-014 | ASC-014 |
+| TEST-015 | ASC-015 |
 
 ---
 
@@ -294,12 +304,16 @@ Released under the Apache License 2.0.
 Current Capabilities:
 
 - 15 AI Security Controls
+- 15 Security Validation Tests
 - OWASP LLM Top 10 Alignment
 - NIST AI RMF Alignment
 - MITRE ATLAS References
 - GitHub Actions Validation
-- Security Test Library
 - Security Use Cases
 - JSON Schema Validation
 
 Building an open, testable, monitorable, and machine-readable standard for AI Security Controls.
+
+Current governance is maintained by a single project maintainer.
+
+Future versions may introduce additional maintainers, advisory reviewers, and community governance processes.
