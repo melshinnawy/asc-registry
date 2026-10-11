@@ -1,0 +1,7 @@
+{
+  "id": "TEST-012",
+  "control": "ASC-012",
+  "name": "Prompt Injection Red Team Exercise",
+  "risk": "Undiscovered Vulnerabilities",
+  "expected": "reported"
+}
