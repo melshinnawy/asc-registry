@@ -40,7 +40,7 @@ framework_mappings:
     - LLM01
 
   nist_ai_rmf:
-    - Govern
+    - MAP.2
 
 references:
   - OWASP Top 10 for LLM Applications
