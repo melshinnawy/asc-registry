@@ -1,0 +1,7 @@
+{
+  "id": "TEST-015",
+  "control": "ASC-015",
+  "name": "Human Approval Workflow Validation",
+  "risk": "Uncontrolled Automated Decisions",
+  "expected": "approved"
+}
