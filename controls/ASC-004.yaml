@@ -5,7 +5,7 @@ title: Agent Permission Boundaries
 status: active
 
 created: "2026-10-07"
-updated: "2026-10-07"
+updated: "2026-10-11"
 
 risk:
   - Agent Abuse
@@ -39,10 +39,11 @@ framework_mappings:
     - LLM08
 
   nist_ai_rmf:
-    - Manage
+    - MANAGE.4
 
 references:
   - OWASP Top 10 for LLM Applications
+  - NIST AI RMF
   - MITRE ATLAS
 
 version: "0.1.0"
