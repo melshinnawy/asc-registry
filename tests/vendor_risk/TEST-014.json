@@ -1,0 +1,7 @@
+{
+  "id": "TEST-014",
+  "control": "ASC-014",
+  "name": "Third-Party Provider Security Review",
+  "risk": "Vendor Risk",
+  "expected": "assessed"
+}
