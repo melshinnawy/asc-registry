@@ -1,0 +1,7 @@
+{
+  "id": "TEST-011",
+  "control": "ASC-011",
+  "name": "Model Drift Detection",
+  "risk": "Behavioral Deviation",
+  "expected": "alerted"
+}
