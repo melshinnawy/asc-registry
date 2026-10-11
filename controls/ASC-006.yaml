@@ -1,0 +1,50 @@
+id: ASC-006
+
+title: AI Supply Chain Security
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Model Tampering
+  - Dependency Compromise
+  - Supply Chain Attack
+
+description: >
+  AI systems shall verify the integrity and provenance
+  of models, datasets, libraries, and third-party
+  components before deployment.
+
+implementation:
+  - Verify model provenance
+  - Maintain software bill of materials
+  - Validate dependency integrity
+  - Monitor supplier security advisories
+
+validation:
+  - Verify signed artifacts
+  - Test dependency verification procedures
+  - Confirm source authenticity
+
+monitoring:
+  - Dependency changes
+  - Model version changes
+  - Supply chain alerts
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0000
+
+  owasp_llm:
+    - LLM05
+
+  nist_ai_rmf:
+    - GOVERN.2
+
+references:
+  - NIST AI RMF
+  - OWASP Top 10 for LLM Applications
+
+version: "0.1.0"
