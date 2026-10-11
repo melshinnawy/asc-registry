@@ -1,0 +1,20 @@
+framework: OWASP LLM Top 10
+
+version: "2025"
+
+mappings:
+
+  ASC-001:
+    - LLM01
+
+  ASC-002:
+    - LLM02
+
+  ASC-003:
+    - LLM05
+
+  ASC-004:
+    - LLM07
+
+  ASC-005:
+    - LLM08
