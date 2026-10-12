@@ -1,0 +1,23 @@
+{
+  "id": "TEST-011",
+  "control": "ASC-011",
+  "title": "Model Drift Detection",
+
+  "objective": "Verify model drift generates alerts",
+
+  "test_steps": [
+    "Inject drift scenario",
+    "Run monitoring system"
+  ],
+
+  "expected_results": [
+    "Drift detected",
+    "Alert generated"
+  ],
+
+  "pass_criteria": [
+    "Alert issued"
+  ],
+
+  "severity": "Medium"
+}

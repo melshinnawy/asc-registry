@@ -1,0 +1,49 @@
+id: ASC-010
+
+title: AI Incident Response
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Delayed Response
+  - Uncontained AI Security Events
+
+description: >
+  Organizations shall establish incident response
+  procedures specific to AI systems, models,
+  agents, and AI-enabled services.
+
+implementation:
+  - Define AI incident response playbooks
+  - Establish escalation procedures
+  - Identify response stakeholders
+  - Conduct response exercises
+
+validation:
+  - Perform tabletop exercises
+  - Review response procedures
+  - Validate escalation workflows
+
+monitoring:
+  - Security incidents
+  - Escalation events
+  - Response performance metrics
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0043
+
+  owasp_llm:
+    - LLM10
+
+  nist_ai_rmf:
+    - MANAGE.5
+
+references:
+  - NIST AI RMF
+  - MITRE ATLAS
+
+version: "0.1.0"

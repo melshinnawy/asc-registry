@@ -1,0 +1,24 @@
+{
+  "id": "TEST-008",
+  "control": "ASC-008",
+  "title": "Telemetry Generation Verification",
+
+  "objective": "Verify security telemetry is generated",
+
+  "test_steps": [
+    "Trigger model interaction",
+    "Trigger access event",
+    "Review telemetry platform"
+  ],
+
+  "expected_results": [
+    "Security event logged",
+    "Telemetry stored"
+  ],
+
+  "pass_criteria": [
+    "Events visible in monitoring system"
+  ],
+
+  "severity": "Medium"
+}

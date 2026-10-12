@@ -1,0 +1,23 @@
+{
+  "id": "TEST-009",
+  "control": "ASC-009",
+  "title": "Unauthorized Deployment Attempt",
+
+  "objective": "Verify unauthorized deployments are blocked",
+
+  "test_steps": [
+    "Attempt deployment with unauthorized account",
+    "Review deployment logs"
+  ],
+
+  "expected_results": [
+    "Deployment denied",
+    "Security alert generated"
+  ],
+
+  "pass_criteria": [
+    "Deployment fails"
+  ],
+
+  "severity": "High"
+}

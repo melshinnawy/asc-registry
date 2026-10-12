@@ -1,0 +1,50 @@
+id: ASC-012
+
+title: AI Red Teaming
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Undiscovered Vulnerabilities
+  - Adversarial Manipulation
+
+description: >
+  Organizations shall conduct structured AI red team
+  exercises to identify weaknesses, security gaps,
+  and adversarial attack paths.
+
+implementation:
+  - Perform prompt injection testing
+  - Execute jailbreak assessments
+  - Test agent misuse scenarios
+  - Document findings and remediation
+
+validation:
+  - Review red team reports
+  - Verify remediation activities
+  - Confirm recurring assessments
+
+monitoring:
+  - Open findings
+  - Remediation progress
+  - Red team assessment results
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0040
+
+  owasp_llm:
+    - LLM01
+
+  nist_ai_rmf:
+    - MEASURE.3
+
+references:
+  - NIST AI RMF
+  - MITRE ATLAS
+  - OWASP Top 10 for LLM Applications
+
+version: "0.1.0"

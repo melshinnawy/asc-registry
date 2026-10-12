@@ -1,0 +1,50 @@
+id: ASC-015
+
+title: Human Oversight and Approval
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Uncontrolled Automated Decisions
+  - Inadequate Human Review
+
+description: >
+  AI systems shall provide mechanisms
+  for human oversight, review,
+  escalation, and approval of
+  high-impact decisions.
+
+implementation:
+  - Define approval workflows
+  - Establish escalation procedures
+  - Enable human review checkpoints
+  - Document oversight responsibilities
+
+validation:
+  - Test approval workflows
+  - Verify escalation paths
+  - Confirm review requirements
+
+monitoring:
+  - Approval events
+  - Escalation events
+  - Oversight exceptions
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0043
+
+  owasp_llm:
+    - LLM10
+
+  nist_ai_rmf:
+    - GOVERN.5
+
+references:
+  - NIST AI RMF
+  - MITRE ATLAS
+
+version: "0.1.0"

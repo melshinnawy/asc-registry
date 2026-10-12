@@ -1,0 +1,24 @@
+{
+  "id": "TEST-010",
+  "control": "ASC-010",
+  "title": "Incident Escalation Validation",
+
+  "objective": "Verify incidents trigger escalation procedures",
+
+  "test_steps": [
+    "Create simulated incident",
+    "Trigger incident workflow",
+    "Review escalation actions"
+  ],
+
+  "expected_results": [
+    "Escalation initiated",
+    "Response team notified"
+  ],
+
+  "pass_criteria": [
+    "Workflow completes successfully"
+  ],
+
+  "severity": "High"
+}

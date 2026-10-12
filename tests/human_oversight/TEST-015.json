@@ -1,0 +1,23 @@
+{
+  "id": "TEST-015",
+  "control": "ASC-015",
+  "title": "Human Approval Workflow Validation",
+
+  "objective": "Verify high-risk actions require human approval",
+
+  "test_steps": [
+    "Trigger high-impact action",
+    "Review approval process"
+  ],
+
+  "expected_results": [
+    "Approval requested",
+    "Action blocked until approval"
+  ],
+
+  "pass_criteria": [
+    "No action executes without approval"
+  ],
+
+  "severity": "High"
+}

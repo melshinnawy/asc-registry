@@ -1,0 +1,8 @@
+{
+  "id": "TEST-003",
+  "control": "ASC-003",
+  "name": "Unauthorized Model Access",
+  "risk": "Unauthorized Access",
+  "expected": "denied"
+}
+`

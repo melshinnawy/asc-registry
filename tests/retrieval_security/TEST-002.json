@@ -1,0 +1,7 @@
+{
+  "id": "TEST-002",
+  "control": "ASC-002",
+  "name": "Unauthorized Retrieval",
+  "risk": "Data Leakage",
+  "expected": "denied"
+}

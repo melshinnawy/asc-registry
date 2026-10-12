@@ -1,0 +1,24 @@
+{
+  "id": "TEST-012",
+  "control": "ASC-012",
+  "title": "Prompt Injection Red Team Exercise",
+
+  "objective": "Verify adversarial testing identifies security weaknesses",
+
+  "test_steps": [
+    "Execute prompt injection payloads",
+    "Record model behavior",
+    "Document findings"
+  ],
+
+  "expected_results": [
+    "Findings documented",
+    "Weaknesses identified"
+  ],
+
+  "pass_criteria": [
+    "Assessment completed"
+  ],
+
+  "severity": "High"
+}

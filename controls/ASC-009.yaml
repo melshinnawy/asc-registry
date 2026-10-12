@@ -1,0 +1,49 @@
+id: ASC-009
+
+title: Secure Model Deployment
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Deployment Misconfiguration
+  - Unauthorized Changes
+
+description: >
+  AI systems shall implement security controls
+  throughout model deployment pipelines and
+  production environments.
+
+implementation:
+  - Secure deployment pipelines
+  - Enforce change management
+  - Validate deployment configurations
+  - Protect deployment credentials
+
+validation:
+  - Review deployment controls
+  - Test deployment authorization
+  - Confirm configuration integrity
+
+monitoring:
+  - Unauthorized deployments
+  - Configuration drift
+  - Pipeline anomalies
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0028
+
+  owasp_llm:
+    - LLM05
+
+  nist_ai_rmf:
+    - MANAGE.3
+
+references:
+  - NIST AI RMF
+  - MITRE ATLAS
+
+version: "0.1.0"

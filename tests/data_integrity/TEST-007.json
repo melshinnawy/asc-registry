@@ -1,0 +1,24 @@
+{
+  "id": "TEST-007",
+  "control": "ASC-007",
+  "title": "Training Data Poisoning Detection",
+
+  "objective": "Verify poisoning attempts can be detected",
+
+  "test_steps": [
+    "Inject known poisoned records",
+    "Run dataset validation",
+    "Analyze anomaly detection output"
+  ],
+
+  "expected_results": [
+    "Poisoned records detected",
+    "Validation alert generated"
+  ],
+
+  "pass_criteria": [
+    "Detection rate above threshold"
+  ],
+
+  "severity": "High"
+}

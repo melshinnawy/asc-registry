@@ -6,9 +6,9 @@ Unlike traditional security frameworks that are published as static documents, A
 
 ---
 
-## Mission
+# Mission
 
-The mission of the ASC Registry is to provide a common language for AI security controls that can be used by:
+The mission of ASC is to establish a common language for AI security controls that can be adopted by:
 
 - Security Architects
 - AI Engineers
@@ -51,27 +51,27 @@ ASC addresses these challenges by defining controls in a structured, machine-rea
 
 ---
 
-## Design Principles
+# Design Principles
 
 Every ASC control must be:
 
-### Implementable
+## Implementable
 
-Controls must provide practical implementation guidance.
+Provide practical implementation guidance.
 
-### Verifiable
+## Verifiable
 
-Controls must include validation requirements.
+Include validation requirements.
 
-### Monitorable
+## Monitorable
 
-Controls must identify monitoring requirements and security signals.
+Define monitoring requirements and security signals.
 
-### Evidence-Based
+## Evidence-Based
 
 Controls must include references to recognized standards, frameworks, or research.
 
-### Machine-Readable
+## Machine-Readable
 
 Controls must conform to the published schema and support automation.
 
@@ -99,26 +99,33 @@ This enables organizations to align engineering controls with governance, compli
 
 ---
 
-## Example Control
+# Framework Alignment
 
-```yaml
-id: ASC-001
+ASC aligns with established security frameworks:
 
-title: Prompt Injection Protection
+- OWASP LLM Top 10
+- NIST AI RMF
+- MITRE ATLAS
 
-status: active
+Framework mappings are maintained under:
 
-risk:
-  - Prompt Injection
-  - Instruction Override
+```text
+mappings/
 ```
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```text
 asc-registry
+│
+├── controls/
+├── mappings/
+├── tests/
+├── use-cases/
+├── schema/
+├── validation/
 │
 ├── README.md
 ├── GOVERNANCE.md
@@ -190,31 +197,69 @@ Together these controls provide foundational coverage across the primary securit
 
 ## Namespace
 
-ASC uses globally unique identifiers for controls.
+---
 
-Examples:
+# ASC Security Baseline
 
-```text
-ASC-001
-ASC-002
-ASC-003
-```
+The ASC Security Baseline currently consists of fifteen foundational control domains.
+
+| Domain | Control |
+|----------|----------|
+| Input Security | ASC-001 |
+| Data Security | ASC-002 |
+| Identity & Access Security | ASC-003 |
+| Agent Security | ASC-004 |
+| Output Security | ASC-005 |
+| Supply Chain Security | ASC-006 |
+| Data Integrity | ASC-007 |
+| Monitoring & Detection | ASC-008 |
+| Deployment Security | ASC-009 |
+| Incident Response | ASC-010 |
+| Continuous Monitoring | ASC-011 |
+| Adversarial Testing | ASC-012 |
+| Sensitive Data Protection | ASC-013 |
+| Third-Party AI Risk Management | ASC-014 |
+| Human Oversight & Governance | ASC-015 |
+
+These controls provide foundational security coverage across AI applications, RAG deployments, AI agents, model-serving platforms, and enterprise AI environments.
 
 Control identifiers are permanent and never reused.
 
-See:
+# Security Tests
 
-```text
-docs/namespace.md
-```
+ASC includes a growing security validation library linked to controls.
+
+| Test | Control |
+|--------|--------|
+| TEST-001 | ASC-001 |
+| TEST-002 | ASC-002 |
+| TEST-003 | ASC-003 |
+| TEST-004 | ASC-004 |
+| TEST-005 | ASC-005 |
+| TEST-006 | ASC-006 |
+| TEST-007 | ASC-007 |
+| TEST-008 | ASC-008 |
+| TEST-009 | ASC-009 |
+| TEST-010 | ASC-010 |
+| TEST-011 | ASC-011 |
+| TEST-012 | ASC-012 |
+| TEST-013 | ASC-013 |
+| TEST-014 | ASC-014 |
+| TEST-015 | ASC-015 |
+
+---
+
+# Security Use Cases
+
+Current use cases include:
 
 for namespace rules.
 
 ---
 
-## Governance
+# Governance
 
-ASC is governed through an open contribution and review process.
+ASC follows an open governance model.
 
 Core principles:
 
@@ -230,13 +275,11 @@ See:
 GOVERNANCE.md
 ```
 
-for governance details.
-
 ---
 
-## RFC Process
+# RFC Process
 
-New controls are proposed through Requests for Comments (RFCs).
+New controls are introduced through Requests for Comments (RFCs).
 
 Each proposal should include:
 
@@ -278,20 +321,15 @@ Validation ensures:
 
 ## Roadmap
 
-### Version 0.1.0
+## Version 0.1.0
 
-- ASC Namespace
+- Namespace Definition
 - Governance Model
 - RFC Process
-- JSON Schema
 - Validation Harness
-- ASC-001 Prompt Injection Protection
-- ASC-002 Retrieval Data Isolation
-- ASC-003 Model Access Control
-- ASC-004 Agent Permission Boundaries
-- ASC-005 Output Validation and Guardrails
+- Initial Security Controls
 
-### Version 0.2.0
+## Version 0.2.0
 
 - Framework Alignment Layer
 - OWASP LLM Top 10 Mappings
@@ -301,7 +339,7 @@ Validation ensures:
 - Automated Schema Enforcement
 - Community RFC Reviews
 
-### Version 1.0.0
+## Version 1.0.0
 
 - Comprehensive AI Security Control Library
 - Expanded Framework Coverage
@@ -313,11 +351,11 @@ Validation ensures:
 
 ---
 
-## Contributing
+# Contributing
 
 Contributions are welcome.
 
-Before submitting a control:
+Before submitting a new control:
 
 1. Review the namespace rules.
 2. Review the schema requirements.
@@ -328,13 +366,28 @@ Before submitting a control:
 
 ---
 
-## License
+# License
 
-This project is released under the Apache License 2.0.
+Released under the Apache License 2.0.
 
 ---
 
-## Status
+# Status
+
+**ASC Registry v0.2.0**
+
+Current Capabilities:
+
+- 15 AI Security Controls
+- 15 Security Validation Tests
+- OWASP LLM Top 10 Alignment
+- NIST AI RMF Alignment
+- MITRE ATLAS References
+- GitHub Actions Validation
+- Security Use Cases
+- JSON Schema Validation
+
+Building an open, testable, monitorable, and machine-readable standard for AI Security Controls.
 
 **ASC Registry v0.2.0 (Foundation Phase)**
 

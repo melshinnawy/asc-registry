@@ -1,0 +1,7 @@
+{
+  "id": "TEST-001",
+  "control": "ASC-001",
+  "name": "Basic Prompt Injection",
+  "risk": "Prompt Injection",
+  "expected": "blocked"
+}

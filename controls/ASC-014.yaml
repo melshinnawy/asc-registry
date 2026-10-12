@@ -1,0 +1,49 @@
+id: ASC-014
+
+title: Third-Party AI Risk Management
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Third-Party Service Risk
+  - External Model Dependency Risk
+
+description: >
+  Organizations shall assess, monitor,
+  and manage security risks associated
+  with external AI providers and services.
+
+implementation:
+  - Perform vendor assessments
+  - Review third-party security controls
+  - Track provider risk status
+  - Establish contractual safeguards
+
+validation:
+  - Review vendor assessments
+  - Verify security requirements
+  - Validate due diligence processes
+
+monitoring:
+  - Vendor risk changes
+  - Third-party incidents
+  - Service dependency issues
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0028
+
+  owasp_llm:
+    - LLM05
+
+  nist_ai_rmf:
+    - GOVERN.3
+
+references:
+  - NIST AI RMF
+  - MITRE ATLAS
+
+version: "0.1.0"
