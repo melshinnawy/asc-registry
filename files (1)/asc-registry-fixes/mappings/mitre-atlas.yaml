@@ -1,0 +1,37 @@
+# GENERATED FILE - do not edit by hand.
+# Source of truth: controls/*.yaml  |  Regenerate: python validation/generate.py
+framework: MITRE ATLAS
+status: provisional
+note: Technique IDs pending verification - see MAPPING_REVIEW.md
+
+mappings:
+  ASC-001:
+    - AML.T0051
+  ASC-002:
+    - AML.T0015
+  ASC-003:
+    - AML.T0028
+  ASC-004:
+    - AML.T0043
+  ASC-005:
+    - AML.T0051
+  ASC-006:
+    - AML.T0000
+  ASC-007:
+    - AML.T0018
+  ASC-008:
+    - AML.T0027
+  ASC-009:
+    - AML.T0028
+  ASC-010:
+    - AML.T0043
+  ASC-011:
+    - AML.T0027
+  ASC-012:
+    - AML.T0040
+  ASC-013:
+    - AML.T0015
+  ASC-014:
+    - AML.T0028
+  ASC-015:
+    - AML.T0043

@@ -1,0 +1,37 @@
+# GENERATED FILE - do not edit by hand.
+# Source of truth: controls/*.yaml  |  Regenerate: python validation/generate.py
+framework: NIST AI RMF
+status: provisional
+note: Subcategory-level verification pending - see MAPPING_REVIEW.md
+
+mappings:
+  ASC-001:
+    - MAP.2
+  ASC-002:
+    - MANAGE.2
+  ASC-003:
+    - GOVERN.3
+  ASC-004:
+    - MANAGE.4
+  ASC-005:
+    - MEASURE.2
+  ASC-006:
+    - GOVERN.2
+  ASC-007:
+    - MEASURE.2
+  ASC-008:
+    - MANAGE.4
+  ASC-009:
+    - MANAGE.3
+  ASC-010:
+    - MANAGE.5
+  ASC-011:
+    - MANAGE.4
+  ASC-012:
+    - MEASURE.3
+  ASC-013:
+    - GOVERN.4
+  ASC-014:
+    - GOVERN.3
+  ASC-015:
+    - GOVERN.5
