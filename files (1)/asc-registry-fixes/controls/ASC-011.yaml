@@ -1,0 +1,50 @@
+id: ASC-011
+
+title: Model Monitoring Security
+
+status: active
+
+created: "2026-10-11"
+updated: "2026-10-11"
+
+risk:
+  - Model Drift
+  - Behavioral Deviation
+  - Undetected Security Events
+
+description: >
+  AI systems shall continuously monitor model behavior,
+  outputs, and security indicators to detect deviations,
+  anomalies, and emerging risks.
+
+implementation:
+  - Establish model monitoring baselines
+  - Detect behavioral anomalies
+  - Monitor model drift indicators
+  - Generate security alerts
+
+validation:
+  - Simulate abnormal model behavior
+  - Verify monitoring alerts
+  - Confirm anomaly detection capabilities
+
+monitoring:
+  - Model drift events
+  - Behavioral anomalies
+  - Security alerts
+
+framework_mappings:
+  mitre_atlas:
+    - AML.T0027
+
+  owasp_llm:
+    - LLM08
+
+  nist_ai_rmf:
+    - MANAGE.4
+
+references:
+  - NIST AI RMF
+  - MITRE ATLAS
+
+version: "0.1.0"

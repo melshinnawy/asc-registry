@@ -1,0 +1,22 @@
+{
+  "id": "TEST-003",
+  "control": "ASC-003",
+  "title": "Unauthorized Model Access",
+  "objective": "Verify the model endpoint rejects unauthenticated and unauthorized requests",
+  "test_steps": [
+    "Call the model endpoint with no credentials",
+    "Call it with an expired or malformed token",
+    "Call it with a valid token that lacks the required role",
+    "Review access logs for each attempt"
+  ],
+  "expected_results": [
+    "Each request is denied",
+    "No inference is performed for denied requests",
+    "Denied attempts are logged"
+  ],
+  "pass_criteria": [
+    "100% of unauthorized requests are rejected",
+    "Every denial is recorded with identity and timestamp"
+  ],
+  "severity": "High"
+}

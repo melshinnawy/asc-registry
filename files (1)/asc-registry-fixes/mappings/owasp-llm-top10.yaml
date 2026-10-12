@@ -1,0 +1,37 @@
+# GENERATED FILE - do not edit by hand.
+# Source of truth: controls/*.yaml  |  Regenerate: python validation/generate.py
+framework: OWASP LLM Top 10
+status: provisional
+note: OWASP edition/numbering to be confirmed - see MAPPING_REVIEW.md
+
+mappings:
+  ASC-001:
+    - LLM01
+  ASC-002:
+    - LLM06
+  ASC-003:
+    - LLM02
+  ASC-004:
+    - LLM08
+  ASC-005:
+    - LLM01
+  ASC-006:
+    - LLM05
+  ASC-007:
+    - LLM03
+  ASC-008:
+    - LLM08
+  ASC-009:
+    - LLM05
+  ASC-010:
+    - LLM10
+  ASC-011:
+    - LLM08
+  ASC-012:
+    - LLM01
+  ASC-013:
+    - LLM06
+  ASC-014:
+    - LLM05
+  ASC-015:
+    - LLM10
