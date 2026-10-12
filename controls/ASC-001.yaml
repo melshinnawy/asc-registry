@@ -5,7 +5,7 @@ title: Prompt Injection Protection
 status: active
 
 created: "2026-10-07"
-updated: "2026-10-07"
+updated: "2026-10-11"
 
 risk:
   - Prompt Injection
@@ -40,7 +40,7 @@ framework_mappings:
     - LLM01
 
   nist_ai_rmf:
-    - Govern
+    - MAP.2
 
 references:
   - OWASP Top 10 for LLM Applications

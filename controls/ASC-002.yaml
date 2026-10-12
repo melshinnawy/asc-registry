@@ -5,7 +5,7 @@ title: Retrieval Data Isolation
 status: active
 
 created: "2026-10-07"
-updated: "2026-10-07"
+updated: "2026-10-11"
 
 risk:
   - Data Leakage
@@ -34,17 +34,4 @@ monitoring:
 
 framework_mappings:
   mitre_atlas:
-    - AML.T0015
-
-  owasp_llm:
-    - LLM06
-
-  nist_ai_rmf:
-    - Manage
-
-references:
-  - OWASP Top 10 for LLM Applications
-  - MITRE ATLAS
-
-version: "0.1.0"
-`
+    - AML

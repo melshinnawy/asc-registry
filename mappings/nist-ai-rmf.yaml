@@ -1,0 +1,18 @@
+  framework: NIST AI RMF
+
+mappings:
+
+  ASC-001:
+    - MAP.2
+
+  ASC-002:
+    - GOVERN.3
+
+  ASC-003:
+    - MANAGE.2
+
+  ASC-004:
+    - MANAGE.4
+
+  ASC-005:
+    - MEASURE.2
